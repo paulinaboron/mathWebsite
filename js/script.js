@@ -1,13 +1,6 @@
 
 $(document).ready(function () {
 
-    
-    // Opening animation
-    let title = $("#title")
-    title.addClass('red')
-    console.log('ok');
-
-
     // Showing navigation with scroll up
     const nav = $("#nav")
     let lastScroll = 0
