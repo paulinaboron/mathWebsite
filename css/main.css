@@ -191,6 +191,27 @@ a {
     padding: 0 10%;  
 }
 
+.text h1{
+    margin-bottom: 10px;
+}
+
+/* Cards Section */
+#bg1{
+    width: 100%;
+    background-color: rgb(16, 14, 78);
+    height: 30vh;
+}
+#bg2{
+    width: 100%;
+    background-color: rgb(9, 7, 56);
+    height: 30vh;
+}
+
+#waterImg{
+    width: 100%;
+}
+
+/* Animations */
 .slideRight{
     transform: translateX(30%);
 }
