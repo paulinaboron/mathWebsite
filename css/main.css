@@ -39,7 +39,9 @@ html::-webkit-scrollbar-track {
 }
 
 #banner video {
-    position: absolute;
+    /* position: absolute; */
+    position: fixed;
+    z-index: 0;
     top: 0;
     left: 0;
     object-fit: cover;
@@ -101,7 +103,7 @@ a {
     color: white;
     padding: 100px 0 100px 100px;
     display: grid;
-
+    position: relative;
 }
 
 #subtitle {
@@ -147,6 +149,11 @@ a {
 }
 
 /* Main content */
+#main{
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
 .imgContainer {
     width: 50%;
     position: relative;
@@ -181,7 +188,25 @@ a {
 
 .text{
     width: 50%;
-    padding: 0 10%;
+    padding: 0 10%;  
+}
+
+.slideRight{
+    transform: translateX(30%);
+}
+
+.slideLeft{
+    transform: translateX(-30%);
+}
+
+.fadeIn{
+    opacity: 0;
+    transition: all 700ms ease-in-out;
+}
+
+.fadeIn.appear{
+    opacity: 1;
+    transform: translateX(0);
 }
 
 
